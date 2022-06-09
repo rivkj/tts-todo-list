@@ -2,7 +2,8 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-body {
+body
+{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -50,6 +51,7 @@ margin: 20px 0;
 }
 
 .tasks li {
+  color: #fff;
 list-style: none;
 height: 45px;
 line-height: 45px;
