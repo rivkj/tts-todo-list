@@ -83,6 +83,12 @@ cursor: pointer;
 transition: all 0.3s ease;
 }
 
-.tasks li:hover #span2 {
+.tasks li:hover #span2 
+{
   right: -40px;
-  }
+}
+
+.navbar-brand
+{
+  margin: 50%;
+}
