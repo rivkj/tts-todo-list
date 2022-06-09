@@ -1,6 +1,5 @@
-h1 
-{
-  color: red;
+h1 {
+  color: rgb(255, 255, 255);
 }
 
 body
@@ -8,7 +7,81 @@ body
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(27, 25, 25);
+  background: linear-gradient(to bottom, black 0%, rgb(39, 34, 34) 100%);
   color: white;
 }
 
+.wrapper {
+  margin: 100px;
+  max-width: 400px;
+  width: 100%;
+  background: black;
+  border-radius: 5px;
+  padding: 30px;
+
+}
+
+.wrapper .inputfield {
+display: flex;
+height: 50px;
+width: 100%;
+margin: 20px 0;
+}
+
+.inputfield input {
+  width: 85%;
+  height: 100%;
+  border: 3px solid;
+  font-size: 20px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+.inputfield .button {
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom, rgb(119, 119, 138) 0%, rgb(216, 211, 211) 100%);
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.tasks li {
+list-style: none;
+height: 45px;
+line-height: 45px;
+position: relative;
+border-radius: 10px;
+margin-bottom: 8px;
+padding: 0 15px;
+background: rgb(37, 35, 35);
+right: 30px;
+
+}
+.tasks li span {
+  position: absolute;
+  right: 70px;
+  color: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tasks li:hover span {
+right: 80px;
+}
+
+.tasks li #span2 {
+  position: absolute;
+  right: -50px;
+top: 10px;
+color: white;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.tasks li:hover #span2 {
+  right: -40px;
+  }
