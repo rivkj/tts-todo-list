@@ -51,6 +51,7 @@ margin: 20px 0;
 }
 
 .tasks li {
+  color: #fff;
 list-style: none;
 height: 45px;
 line-height: 45px;
