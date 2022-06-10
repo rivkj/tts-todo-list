@@ -29,11 +29,19 @@
       <h1>Todo List</h1>
       <p>Text input with button will go here</p>
       <div class="inputfield">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex" role="form">
+          <input
+            class="form-control me-2"
+            type="text"
+            placeholder="Add a Task!"
+            aria-label="Add a Task!"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa fa-plus"></i>
+          </button>
         </form>
       </div>
+      
       <p>List of task items will go here.</p>
       <div class="tasks">
         <ul>
