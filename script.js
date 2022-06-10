@@ -10,7 +10,7 @@ console.log("Hello World");
 
 let toDoList = [];
 
-const addTask = (ev) => {
+const addTask = (ev) => {  
   ev.preventDefault();
   let todo = 
   {
@@ -50,7 +50,9 @@ const addTask = (ev) => {
     toDoListrow.append(trashIcon);
     toDoList = [];
 
-    console.log(toDoList)
+    const input = document.getElementById("inputfield")
+    input.value = "";
+
   } 
 };
 
