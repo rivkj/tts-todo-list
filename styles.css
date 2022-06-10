@@ -1,5 +1,11 @@
+*
+{
+  color: #fff;
+}
+
 h1 {
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 body
@@ -86,4 +92,14 @@ transition: all 0.3s ease;
 .tasks li:hover #span2 
 {
   right: -40px;
+}
+
+.navbar
+{
+  background-color: #0E1111;
+}
+
+button
+{
+  width: auto;
 }
