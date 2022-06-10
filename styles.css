@@ -1,7 +1,3 @@
-h1 {
-  color: rgb(255, 255, 255);
-}
-
 body
 {
   display: flex;
@@ -19,6 +15,12 @@ body
   border-radius: 5px;
   padding: 30px;
 
+}
+
+h1,
+h2,
+p {
+  color: #adabab;
 }
 
 .wrapper .inputfield {
@@ -52,15 +54,15 @@ margin: 20px 0;
 
 .tasks li {
   color: #fff;
-list-style: none;
-height: 45px;
-line-height: 45px;
-position: relative;
-border-radius: 10px;
-margin-bottom: 8px;
-padding: 0 15px;
-background: rgb(37, 35, 35);
-right: 30px;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  background: rgb(37, 35, 35);
+  right: 30px;
 
 }
 .tasks li span {
