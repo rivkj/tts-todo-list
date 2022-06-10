@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+*
+{
+  color: #fff;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+>>>>>>> 1f1c766690663c254b4c351f846b5d85063bb1a9
 body
 {
   display: flex;
@@ -90,7 +103,12 @@ transition: all 0.3s ease;
   right: -40px;
 }
 
-.navbar-brand
+.navbar
 {
-  margin: 50%;
+  background-color: #0E1111;
+}
+
+button
+{
+  width: auto;
 }
