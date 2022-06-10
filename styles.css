@@ -99,7 +99,7 @@ transition: all 0.3s ease;
   background-color: #0E1111;
 }
 
-button
+.wrapper button
 {
-  width: auto;
+  width: 100px;  
 }
