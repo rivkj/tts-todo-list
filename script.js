@@ -1,13 +1,5 @@
 console.log("Hello World");
 
-// JS variables
-
-// DOM variables
-
-// Function Definitions
-
-// Event Listeners
-
 let toDoList = [];
 
 const addTask = (ev) => {  
