@@ -20,9 +20,8 @@ body
 .wrapper {
   margin: 100px;
   max-width: 400px;
-  width: 100%;
   background: black;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 30px;
 
 }
@@ -47,19 +46,6 @@ margin: 20px 0;
   font-size: 20px;
   border-radius: 3px;
   padding-left: 15px;
-}
-
-.inputfield .button {
-  width: 60px;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: linear-gradient(to bottom, rgb(119, 119, 138) 0%, rgb(216, 211, 211) 100%);
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  cursor: pointer;
-  border-radius: 3px;
-  margin-left: 5px;
 }
 
 .tasks li {
@@ -98,11 +84,6 @@ transition: all 0.3s ease;
 .tasks li:hover #span2 
 {
   right: -40px;
-}
-
-.navbar
-{
-  background-color: #0E1111;
 }
 
 .wrapper button
