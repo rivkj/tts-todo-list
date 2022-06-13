@@ -23,19 +23,23 @@ const addTask = (ev) => {
     
     trashIcon.classList.add("trash");
     taskInput.setAttribute('id', 'delete');
+
+    checkBox.classList.add('checkbox');
     
 
     const pEl = document.createElement("p")
     pEl.innerText = toDoList[i].task;
+    pEl.setAttribute('id', 'strikethrough');
     taskDiv.append(pEl);
-
+    
 
     const tEl = document.createElement("span")
     tEl.innerHTML = `<i class="fas fa-trash-alt"></i>`;
     trashIcon.append(tEl);
 
     const checkEl = document.createElement("span")
-    checkEl.innerHTML = `<input type="checkbox"></input>`;
+    checkEl.innerHTML = `<input type="checkbox" id="check"></input>`;
+    
     checkBox.append(checkEl);
 
     taskInput.append(checkBox);
@@ -48,12 +52,15 @@ const addTask = (ev) => {
     input.value = "";
   } 
 
+  const checkbox = document.getElementsByClassName('checkbox');
 
-const trash = document.getElementsByClassName("fa-trash-alt");
-for(let i = 0; i < trash.length; i++)
-{
-  trash[i].addEventListener('click', delTask);
-}
+  const trash = document.getElementsByClassName("fa-trash-alt");
+  for(let i = 0; i < trash.length; i++)
+  {
+    trash[i].addEventListener('click', delTask);
+    checkbox[i].addEventListener('click', validate);
+  }
+  
 };
 
 function delTask() 
@@ -65,4 +72,18 @@ function delTask()
 };
 
 document.querySelector("button").addEventListener('click', addTask);
+
+function validate() 
+{
+ const p = document.getElementById('strikethrough');
+ const c = document.getElementById ('check');
+ if(c.checked) {
+  p.className = 'strikethrough';
+ } else {
+  p.className = 'unstrike';
+ }
+}
+
+
+
 

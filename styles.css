@@ -72,3 +72,11 @@ p {
 .trash {
   cursor: pointer;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.unstrike {
+  text-decoration: none;
+}
