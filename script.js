@@ -14,15 +14,15 @@ const addTask = (ev) => {
 
   for(let i = 0; i < toDoList.length; i++)
   {
-
-    const taskDiv = document.createElement("div");
-    const trashIcon = document.createElement("div")
-    const checkBox = document.createElement("div")
+    const taskInput = document.createElement("div");
+    const taskDiv = document.createElement("span");
+    const trashIcon = document.createElement("span");
+    const checkBox = document.createElement("span");
     //console.log(toDoList[i].task);
 
-    checkBox.className="col-3"
-    taskDiv.className="col-6";
-    trashIcon.className="col-3"
+    
+    trashIcon.classList.add("trash");
+    taskInput.classList.add("delete");
 
     const pEl = document.createElement("p")
     pEl.innerText = toDoList[i].task;
@@ -37,9 +37,10 @@ const addTask = (ev) => {
     checkEl.innerHTML = `<input type="checkbox"></input>`;
     checkBox.append(checkEl);
 
-    toDoListrow.append(checkBox)
-    toDoListrow.append(taskDiv);
-    toDoListrow.append(trashIcon);
+    taskInput.append(checkBox);
+    taskInput.append(taskDiv);
+    taskInput.append(trashIcon);
+    toDoListrow.append(taskInput);
     toDoList = [];
 
     const input = document.getElementById("inputfield")
@@ -48,10 +49,13 @@ const addTask = (ev) => {
   } 
 };
 
+const delTask = (ev) => {
+  const del = document.getElementsByClassName("delete");
 
-  
+  del.childElement.remove();
+}
 
 
-
+document.querySelector("i").addEventListener('click', delTask);
 
 document.querySelector("button").addEventListener('click', addTask);
