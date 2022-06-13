@@ -22,7 +22,8 @@ const addTask = (ev) => {
 
     
     trashIcon.classList.add("trash");
-    taskInput.classList.add("delete");
+    taskInput.setAttribute('id', 'delete');
+    
 
     const pEl = document.createElement("p")
     pEl.innerText = toDoList[i].task;
@@ -45,17 +46,23 @@ const addTask = (ev) => {
 
     const input = document.getElementById("inputfield")
     input.value = "";
-
   } 
+
+
+const trash = document.getElementsByClassName("fa-trash-alt");
+for(let i = 0; i < trash.length; i++)
+{
+  trash[i].addEventListener('click', delTask);
+}
 };
 
-const delTask = (ev) => {
-  const del = document.getElementsByClassName("delete");
+function delTask() 
+{
+  console.log("click")
+  const del = document.getElementById("delete");
 
-  del.childElement.remove();
-}
-
-
-document.querySelector("i").addEventListener('click', delTask);
+  del.parentNode.removeChild(del);
+};
 
 document.querySelector("button").addEventListener('click', addTask);
+
