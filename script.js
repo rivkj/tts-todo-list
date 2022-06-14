@@ -79,7 +79,7 @@ function validate()
  const c = document.getElementById ('check');
  if(c.checked) {
   p.className = 'strikethrough';
- } else {
+ } else{
   p.className = 'unstrike';
  }
 }
