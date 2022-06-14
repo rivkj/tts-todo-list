@@ -83,7 +83,3 @@ function validate()
   p.className = 'unstrike';
  }
 }
-
-
-
-

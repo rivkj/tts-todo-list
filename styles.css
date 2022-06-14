@@ -58,10 +58,8 @@ p {
 }
 
 #todo-row span {
-  display: inline;
+  display: inline-block;
   margin-bottom: 0;
-  float: left;
-  
 }
 
 .wrapper button
@@ -79,4 +77,8 @@ p {
 
 .unstrike {
   text-decoration: none;
+}
+
+span {
+  padding: 0 .5rem;
 }
