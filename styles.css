@@ -1,5 +1,4 @@
-*
-{
+* {
   color: #fff;
 }
 
@@ -19,7 +18,7 @@ body
 
 .wrapper {
   margin: 100px;
-  max-width: 400px;
+  max-width: 90%;
   background: black;
   border-radius: 25px;
   padding: 30px;
@@ -33,10 +32,20 @@ p {
 }
 
 .wrapper .inputfield {
-display: flex;
-height: 50px;
-width: 100%;
-margin: 20px 0;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.mx-auto {
+  width: 85%;
+}
+
+.d-flex {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .inputfield input {
@@ -48,45 +57,28 @@ margin: 20px 0;
   padding-left: 15px;
 }
 
-.tasks li {
-  color: #fff;
-  list-style: none;
-  height: 45px;
-  line-height: 45px;
-  position: relative;
-  border-radius: 10px;
-  margin-bottom: 8px;
-  padding: 0 15px;
-  background: rgb(37, 35, 35);
-  right: 30px;
-
-}
-.tasks li span {
-  position: absolute;
-  right: 70px;
-  color: red;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.tasks li:hover span {
-right: 80px;
-}
-
-.tasks li #span2 {
-  position: absolute;
-  right: -50px;
-top: 10px;
-color: white;
-cursor: pointer;
-transition: all 0.3s ease;
-}
-
-.tasks li:hover #span2 
-{
-  right: -40px;
+#todo-row span {
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 .wrapper button
 {
   width: 100px;  
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.unstrike {
+  text-decoration: none;
+}
+
+span {
+  padding: 0 .5rem;
 }
