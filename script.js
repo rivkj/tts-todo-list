@@ -30,6 +30,7 @@ const addTask = (ev) => {
     const pEl = document.createElement("p")
     pEl.innerText = toDoList[i].task;
     pEl.setAttribute('id', 'strikethrough');
+    pEl.setAttribute('class', 'unstrike');
     taskDiv.append(pEl);
     
 
